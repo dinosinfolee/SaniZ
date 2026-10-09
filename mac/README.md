@@ -2,7 +2,7 @@
 
 화면을 확대하고 그 위에 그림 · 글씨를 쓰는 도구예요. 화면 일부를 오려 **항상 맨 위에 띄워 두는 게시 모드**도 있습니다. (macOS 14 Sonoma 이상, Apple 실리콘 · 인텔 맥 모두 지원)
 
-**⬇️ [SaniZ for Mac v1.0.0 다운로드](https://github.com/dinosinfolee/mac/raw/refs/heads/main/SaniZ/SaniZ-mac-1.0.0.zip)**
+**⬇️ [SaniZ for Mac v1.0.0 다운로드](https://github.com/dinosinfolee/SaniZ/raw/refs/heads/main/mac/SaniZ-mac-1.0.0.zip)**
 
 <br>
 
