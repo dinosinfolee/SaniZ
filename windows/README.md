@@ -2,7 +2,7 @@
 
 화면을 확대하고 그 위에 그림, 글씨를 작성할 수 있는 도구입니다. 화면 일부를 오려 **항상 맨 위에 띄워 두는 게시 모드**도 있습니다. (Windows 10/11 64비트 전용)
 
-**⬇️ [SaniZ v1.4.0 다운로드](https://github.com/dinosinfolee/windows/raw/refs/heads/main/SaniZ/SaniZ_v1.4.0.zip)**
+**⬇️ [SaniZ v1.4.0 다운로드](https://github.com/dinosinfolee/SaniZ/raw/refs/heads/main/windows/SaniZ-1.4.0.zip)**
 
 압축 해제 후, `SaniZ.exe`를 더블클릭하면 작업 표시줄 트레이에 아이콘이 추가됩니다. 트레이에 상주하며, 더블클릭하여 단축키를 변경하거나 사용 방법을 확인할 수 있습니다. 복잡한 설치 과정 없이, 별도 DLL 없이 단독 실행됩니다.
 
