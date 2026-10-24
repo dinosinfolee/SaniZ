@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaniZ 개인정보처리방침</title>
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --bg: #FBFBFA; --surface: #FFFFFF; --text: #37352F; --head: #1F1E1B;
+    --muted: #6B6A66; --faint: #9A9A95; --line: #E9E8E4; --accent: #3B6BEE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #191918; --surface: #222221; --text: #DEDDD9; --head: #F2F1EE;
+      --muted: #A3A29D; --faint: #807F7A; --line: #32322F; --accent: #7D9BF5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #191918; --surface: #222221; --text: #DEDDD9; --head: #F2F1EE;
+    --muted: #A3A29D; --faint: #807F7A; --line: #32322F; --accent: #7D9BF5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Noto Sans KR", -apple-system, "Malgun Gothic", sans-serif;
+    font-size: 15px; line-height: 1.8; letter-spacing: -0.011em;
+    word-break: keep-all; overflow-wrap: break-word;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; gap: 9px; height: 58px; }
+  .bar a { display: flex; align-items: center; gap: 9px; color: var(--head); font-weight: 700; text-decoration: none; }
+  .bar img { width: 26px; height: 26px; border-radius: 7px; }
+  main { padding: 48px 0 64px; }
+  h1 { margin: 0 0 6px; font-size: clamp(24px, 4.6vw, 30px); color: var(--head); letter-spacing: -0.02em; }
+  .date { margin: 0 0 32px; color: var(--faint); font-size: 13px; }
+  h2 { margin: 32px 0 8px; font-size: 17px; color: var(--head); }
+  p, li { color: var(--muted); }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 4px; }
+  b { color: var(--text); font-weight: 500; }
+  code { font-size: 13px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 12.5px; color: var(--faint); }
+  footer a { color: var(--muted); text-decoration: none; }
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><a href="./"><img src="logo.png" alt=""> SaniZ</a></div></header>
+
+<main class="wrap">
+  <h1>개인정보처리방침</h1>
+  <p class="date">시행일: 2026년 10월 24일</p>
+
+  <p>SaniZ(이하 "본 프로그램")는 화면 확대 · 판서 · 게시를 위한 수업 도구입니다. 본 프로그램은 사용자의 개인정보를 수집하지 않습니다.</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>본 프로그램은 이름, 연락처, 계정 정보, 기기 식별자, 사용 기록 등 어떠한 개인정보도 수집하지 않습니다.</p>
+
+  <h2>2. 화면 캡처와 판서 내용</h2>
+  <ul>
+    <li>확대 · 판서 · 게시 모드를 켜면 그 순간의 화면을 캡처하여 <b>사용자의 컴퓨터 메모리 안에서만</b> 처리합니다.</li>
+    <li>캡처한 화면과 판서 내용은 모드를 끄면 즉시 메모리에서 삭제되며, 디스크에 저장되지 않습니다.</li>
+    <li>사용자가 화면 저장(<code>Ctrl + S</code>)을 실행한 경우에만, 사용자가 지정한 위치에 이미지 파일로 저장됩니다.</li>
+  </ul>
+
+  <h2>3. 외부 전송</h2>
+  <p>본 프로그램은 인터넷 연결을 사용하지 않으며, 화면 · 판서 내용 · 설정을 저작자 또는 제3자에게 전송하지 않습니다.</p>
+
+  <h2>4. 설정 저장</h2>
+  <p>단축키 · 펜 색 · 글꼴 · 크기 등의 설정은 사용자의 컴퓨터(Windows 레지스트리)에만 저장됩니다. 프로그램을 제거하면 함께 삭제됩니다.</p>
+
+  <h2>5. 사용자의 책임</h2>
+  <p>저장하거나 공유한 화면 이미지의 관리, 그리고 화면에 표시된 개인정보의 보호는 사용자의 책임입니다.</p>
+
+  <h2>6. 문의</h2>
+  <p>본 방침에 관한 문의는 <a href="https://github.com/dinosinfolee/SaniZ/issues" style="color:var(--accent)">GitHub 저장소</a>를 통해 남겨 주십시오.</p>
+</main>
+
+<footer><div class="wrap">© 2026 Sani. All rights reserved. · <a href="./">SaniZ 안내 페이지</a></div></footer>
+</body>
+</html>
