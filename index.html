@@ -3,13 +3,15 @@
 <head>
 <meta charset="utf-8">
 <script>
-  /* ===== 버전 설정 — 새 버전을 올릴 때 이 두 줄만 바꿉니다 ===== */
+  /* ===== 배포 설정 =====
+     Windows 판은 Microsoft Store 로 배포합니다 (버전은 스토어가 관리 — 여기서 바꿀 필요 없음).
+     Mac 판은 새 버전을 올릴 때 mac 한 줄만 바꿉니다. */
   var SANIZ = {
-    win: '1.5.1',   // Windows 판 — windows/SaniZ-<버전>.zip
-    mac: '1.0.3'    // Mac 판     — mac/SaniZ-mac-<버전>.zip
+    winStore: '9PDD7C3PV6VG', // Microsoft Store 앱 ID
+    mac: '1.0.3'              // Mac 판 — mac/SaniZ-mac-<버전>.zip
   };
-  /* ============================================================ */
-  SANIZ.winUrl = 'https://github.com/dinosinfolee/SaniZ/raw/refs/heads/main/windows/SaniZ-' + SANIZ.win + '.zip';
+  /* ===================== */
+  SANIZ.winUrl = 'https://apps.microsoft.com/detail/' + SANIZ.winStore;
   SANIZ.macUrl = 'https://github.com/dinosinfolee/SaniZ/raw/refs/heads/main/mac/SaniZ-mac-' + SANIZ.mac + '.zip';
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -284,9 +286,9 @@
       <span>필요한 부분은 오려서 화면 맨 위에 계속 띄워 둘 수 있습니다.</span>
     </p>
     <div class="cta">
-      <a class="btn btn-primary win" href="#" data-dl="win">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
-        Windows용 v<span data-ver="win"></span> 내려받기
+      <a class="btn btn-primary win" href="#" data-dl="win" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.5v7H3zM11 4.4 21 3v8.5H11zM3 12.5h7v7L3 18.5zM11 12.5h10V21l-10-1.4z"/></svg>
+        Microsoft Store에서 받기
       </a>
       <a class="btn btn-primary mac" href="#" data-dl="mac">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
@@ -294,7 +296,7 @@
       </a>
       <a class="btn btn-ghost" href="#modes">모드 안내</a>
     </div>
-    <p class="fine win">Windows 10 · 11 (64비트) · 설치 과정 없이 단독 실행 · 약 170 KB</p>
+    <p class="fine win">Windows 10 · 11 (64비트) · Microsoft Store 무료 설치 · 자동 업데이트</p>
     <p class="fine mac">macOS 14 Sonoma 이상 · Apple 실리콘 · 인텔 Mac 모두 지원</p>
   </div>
 </div>
@@ -303,28 +305,28 @@
   <div class="wrap">
     <p class="eyebrow">시작하기</p>
     <div class="win">
-      <h2>내려받아 바로 실행합니다</h2>
-      <p class="sub">설치 프로그램이나 별도 DLL이 필요하지 않습니다. 실행하면 작업 표시줄 트레이에 상주합니다.</p>
+      <h2>Microsoft Store에서 설치합니다</h2>
+      <p class="sub">설치와 업데이트를 Microsoft Store가 관리합니다. 실행하면 작업 표시줄 트레이에 상주합니다.</p>
       <div class="steps">
         <div class="card">
           <span class="no">1</span>
-          <h3>내려받기</h3>
-          <p>위의 내려받기 단추로 압축 파일을 받은 뒤, 원하는 위치에 압축을 해제합니다.</p>
+          <h3>스토어에서 받기</h3>
+          <p>위의 <b>Microsoft Store에서 받기</b> 단추를 눌러 스토어 페이지를 열고 <b>받기</b>를 누릅니다.</p>
         </div>
         <div class="card">
           <span class="no">2</span>
           <h3>실행하기</h3>
-          <p><b>SaniZ.exe</b>를 실행하면 트레이에 아이콘이 추가됩니다. 아이콘을 두 번 누르면 설정 창이 열립니다.</p>
+          <p>시작 메뉴에서 <b>SaniZ</b>를 실행합니다. 아이콘은 작업 표시줄 오른쪽 트레이(<b>^</b>) 안에 있으며, 두 번 누르면 설정 창이 열립니다.</p>
         </div>
         <div class="card">
           <span class="no">3</span>
-          <h3>보호 안내가 나타나면</h3>
-          <p>서명되지 않은 개인 제작 프로그램이라 나타나는 정상 안내입니다. <b>추가 정보 › 실행</b>을 누릅니다.</p>
+          <h3>백신 경고가 나타나면</h3>
+          <p>새로 출시된 프로그램이라 일부 백신이 평판 기반으로 실행을 막을 수 있습니다. 경고 창의 처리 방법을 <b>허용</b>으로 바꿉니다.</p>
         </div>
       </div>
       <div class="tip">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
-        <div><b>새 버전으로 교체하기</b> — 기존 SaniZ를 종료하지 않고 새 버전을 실행하면, 기존 프로그램이 자동으로 종료되고 새 버전으로 교체됩니다. 같은 버전이나 더 낮은 버전을 실행하면 교체되지 않고 기존 프로그램이 유지됩니다. (v1.5.0부터 적용)</div>
+        <div><b>업데이트는 자동입니다</b> — 새 버전이 나오면 Microsoft Store가 자동으로 설치합니다. 이전에 압축 파일로 받은 SaniZ를 쓰고 있었다면, 기존 SaniZ 설정 창에서 <b>Windows 시작 시 자동 실행</b>을 끄고 종료한 뒤 폴더를 삭제하십시오. 자동 실행이 필요하면 스토어 판 설정 창에서 다시 켭니다.</div>
       </div>
     </div>
     <div class="mac">
@@ -489,7 +491,7 @@
   <div class="wrap fbar">
     <span>© 2026 Sani. All rights reserved.</span>
     <span class="sp">
-      <a href="#" data-dl="win">Windows v<span data-ver="win"></span> →</a>
+      <a href="#" data-dl="win" target="_blank" rel="noopener">Windows (Microsoft Store) →</a>
       <a href="#" data-dl="mac">Mac v<span data-ver="mac"></span> →</a>
     </span>
   </div>
